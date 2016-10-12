@@ -9,6 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var topSuitLabel: UILabel!
+    @IBOutlet weak var bottemSuitLabel: UILabel!
+    @IBOutlet weak var numberLabel: UILabel!
 
     // TODO: Create IB outlets
     
@@ -16,6 +19,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        var buttonTitle = sender.titleLabel!.text!
+        
+        let suit = buttonTitle.remove(at: buttonTitle.startIndex)
+        topSuitLabel.text = String(suit)
+        bottemSuitLabel.text = String(suit)
+        
+        numberLabel.text = buttonTitle
+        
+    }
     
     
     // TODO: IB actions and code to update UI
