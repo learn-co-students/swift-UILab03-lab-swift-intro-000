@@ -8,18 +8,44 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
-    // TODO: Create IB outlets
+
+class ViewController: UIViewController {
+    
+    @IBOutlet var upperLLabel: UILabel!
+    @IBOutlet var lowerRLabel: UILabel!
+    @IBOutlet var valueLabel: UILabel!
+    
+    @IBOutlet var fourClubs: UIButton!
+    @IBOutlet var threeSpades: UIButton!
+    @IBOutlet var eightDiamonds: UIButton!
+    @IBOutlet var tenHearts: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    
-    
-    // TODO: IB actions and code to update UI
+    @IBAction func selectClub(_ sender: UIButton) {
+       upperLLabel.text = "♣️"
+       lowerRLabel.text = "♣️"
+       valueLabel.text = "4"
+    }
 
-  
+    @IBAction func selectSpade(_ sender: UIButton) {
+        upperLLabel.text = "♠️"
+        lowerRLabel.text = "♠️"
+        valueLabel.text = "3"
+    }
+    @IBAction func selectDiamond(_ sender: UIButton) {
+        upperLLabel.text = "♦️"
+        lowerRLabel.text = "♦️"
+        valueLabel.text = "8"
+    }
+    @IBAction func selectHeart(_ sender: UIButton) {
+        upperLLabel.text = "♥️"
+        lowerRLabel.text = "♥️"
+        valueLabel.text = "10"
+    }
+   
 
 }
