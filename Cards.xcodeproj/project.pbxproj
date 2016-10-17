@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		7D139A5A1D8E05ED00F92686 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D139A591D8E05ED00F92686 /* ViewController.swift */; };
 		B7262DAB1D176C34009620C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7262DAA1D176C34009620C4 /* AppDelegate.swift */; };
-		B7262DB01D176C34009620C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7262DAE1D176C34009620C4 /* Main.storyboard */; };
+		B7262DB01D176C34009620C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7262DAE1D176C34009620C4 /* Main.storyboard */; settings = {ASSET_TAGS = (4, ); }; };
 		B7262DB21D176C34009620C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7262DB11D176C34009620C4 /* Assets.xcassets */; };
 		B7262DB51D176C34009620C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7262DB31D176C34009620C4 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -90,6 +90,12 @@
 		B7262D9F1D176C34009620C4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					1,
+					2,
+					3,
+					4,
+				);
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Flatiron School";
