@@ -9,16 +9,43 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var topLeftQuestion: UILabel!
+    @IBOutlet weak var middleQuestion: UILabel!
+    @IBOutlet weak var bottomRightQuestion: UILabel!
 
-    // TODO: Create IB outlets
+    @IBOutlet weak var fourOfClubs: UIButton!
+    @IBOutlet weak var eightOfDiamonds: UIButton!
+    @IBOutlet weak var threeOfSpades: UIButton!
+    @IBOutlet weak var tenOfHearts: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
+    func changeAndDisplaySuite(value: String, suite: String) {
+        topLeftQuestion.text = suite
+        middleQuestion.text = value
+        bottomRightQuestion.text = suite
+    }
     
-    
-    // TODO: IB actions and code to update UI
+    @IBAction func changeAllLablesToSuite(_ sender: UIButton) {
+        switch sender {
+        case fourOfClubs:
+            print("Changed to the Four of Clubs")
+            changeAndDisplaySuite(value: "4", suite: "♣️")
+        case eightOfDiamonds:
+            print("Changed to the Eight of Diamonds")
+            changeAndDisplaySuite(value: "8", suite: "♦️")
+        case threeOfSpades:
+            print("Changed to the Three of Spade")
+            changeAndDisplaySuite(value: "3", suite: "♠️")
+        case tenOfHearts:
+            print("Changed to the Ten of Hearts")
+            changeAndDisplaySuite(value: "10", suite: "♥️")
+        default:
+            print("I don't recognize this, because you didn't write it yet")
+        }
+    }
 
   
 
