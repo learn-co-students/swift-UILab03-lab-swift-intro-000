@@ -16,9 +16,32 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    @IBOutlet weak var topSuit: UILabel!
+    @IBOutlet weak var cardValue: UILabel!
+    @IBOutlet weak var bottomSuit: UILabel!
+    
+    @IBAction func fourOfClubs(_ sender: UIButton) {
+        setSuitAndNumber(suit: "♣️", value: "4")
+    }
+
+    @IBAction func threeOfSpades(_ sender: AnyObject) {
+        setSuitAndNumber(suit: "♠️", value: "3")
+    }
+
+    @IBAction func eightOfSpagaes(_ sender: UIButton) {
+        setSuitAndNumber(suit: "♦️", value: "8")
+    }
+
+    @IBAction func tenOfHearts(_ sender: AnyObject) {
+        setSuitAndNumber(suit: "♥️", value: "10")
+    }
     
     
-    // TODO: IB actions and code to update UI
+    func setSuitAndNumber(suit: String, value: String) {
+        self.topSuit.text = suit
+        self.bottomSuit.text = suit
+        self.cardValue.text = value
+    }
 
   
 
