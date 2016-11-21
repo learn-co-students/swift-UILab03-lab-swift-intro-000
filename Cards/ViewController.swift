@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    // TODO: Create IB outlets
+
     @IBOutlet weak var upperLeftSuit: UILabel!
     @IBOutlet weak var lowerRightSuit: UILabel!
     @IBOutlet weak var cardValue: UILabel!
@@ -21,8 +21,6 @@ class ViewController: UIViewController {
     }
     
     
-    
-    // TODO: IB actions and code to update UI
     
     @IBAction func fourClubButton(_ sender: Any) {
         upperLeftSuit.text = "♣️"
