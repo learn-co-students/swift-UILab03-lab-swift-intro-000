@@ -10,16 +10,36 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    // TODO: Create IB outlets
+    @IBOutlet weak var leftLabel: UILabel!
+    @IBOutlet weak var centerLabel: UILabel!
+    @IBOutlet weak var rightLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        leftLabel.text = "?"
+        centerLabel.text = "?"
+        rightLabel.text = "?"
     }
     
+    @IBAction func fourOfClubs(_ sender: UIButton) {
+        leftLabel.text = "♣️"
+        centerLabel.text = "4"
+        rightLabel.text = "♣️"
+    }
     
-    
-    // TODO: IB actions and code to update UI
-
-  
-
+    @IBAction func threeOfSpades(_ sender: UIButton) {
+        leftLabel.text = "♠️"
+        centerLabel.text = "3"
+        rightLabel.text = "♠️"
+    }
+    @IBAction func eightOfDiamonds(_ sender: UIButton) {
+        leftLabel.text = "♦️"
+        centerLabel.text = "8"
+        rightLabel.text = "♦️"
+    }
+    @IBAction func tenOfHearts(_ sender: UIButton) {
+        leftLabel.text = "♥️"
+        centerLabel.text = "10"
+        rightLabel.text = "♥️"
+    }
 }
