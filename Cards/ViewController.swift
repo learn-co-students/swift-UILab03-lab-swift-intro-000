@@ -16,10 +16,32 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    @IBOutlet var button: UIButton!
     
-    
-    // TODO: IB actions and code to update UI
+    @IBAction func buttonpress(_ sender: UIButton) {
+        print("button press")
+        
+        var slice:String = (
+            sender.titleLabel!.text)!
+        let suitChar = String(describing: slice.characters.first!)
+        var valueChar : String = ""
+        if slice.characters.count == 2 {
+             valueChar = String(describing: slice.characters.last!)
+        } else {
+            valueChar = "10"
+        }
+       
+        suit.text = suitChar
+        suit2.text = suitChar
+        value.text = valueChar
 
-  
+        
+    }
+    
+    @IBOutlet var suit: UILabel!
+    
+    @IBOutlet var suit2: UILabel!
+    @IBOutlet var value: UILabel!
+
 
 }
