@@ -9,17 +9,47 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    // TODO: Create IB outlets
+    
+    @IBOutlet weak var cornerLabel1 : UILabel!
+    @IBOutlet weak var cornerLabel2 : UILabel!
+    @IBOutlet weak var centerLabel : UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        cornerLabel1.text = ""
+        cornerLabel2.text = ""
+        centerLabel.text = ""
     }
     
     
     
-    // TODO: IB actions and code to update UI
-
+    @IBAction func card(_ sender : UIButton) {
+        print((sender.titleLabel?.text)! as String)
+        
+        switch (sender.titleLabel?.text)! as String {
+        case "♣️4":
+            cornerLabel1.text = "♣️"
+            cornerLabel2.text = "♣️"
+            centerLabel.text = "4"
+        case "♠️3":
+            cornerLabel1.text = "♠️"
+            cornerLabel2.text = "♠️"
+            centerLabel.text = "3"
+        case "♦️8":
+            cornerLabel1.text = "♦️"
+            cornerLabel2.text = "♦️"
+            centerLabel.text = "8"
+        case "♥️10":
+            cornerLabel1.text = "♥️"
+            cornerLabel2.text = "♥️"
+            centerLabel.text = "10"
+        default:
+            cornerLabel1.text = ""
+            cornerLabel2.text = ""
+            centerLabel.text = ""
+        }
+    }
   
 
 }
