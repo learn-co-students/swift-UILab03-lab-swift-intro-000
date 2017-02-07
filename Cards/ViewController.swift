@@ -10,7 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    // TODO: Create IB outlets
+    @IBOutlet weak var cornerSuit: UILabel!
+    @IBOutlet weak var centerNumber: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +20,15 @@ class ViewController: UIViewController {
     
     
     
-    // TODO: IB actions and code to update UI
+    @IBAction func numberBtn(_ sender: Any) {
+        
+        
+        
+        
+        
+    }
+    
+   
 
   
 
