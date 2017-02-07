@@ -52,25 +52,39 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="♠️3"/>
+                                <connections>
+                                    <action selector="numberBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6oT-6a-2no"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JzB-Nc-Ix6">
                                 <rect key="frame" x="195" y="391" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="♦️8"/>
+                                <connections>
+                                    <action selector="numberBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HvV-lV-VBn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5hp-h0-ZlG">
                                 <rect key="frame" x="248" y="391" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="♥️10"/>
+                                <connections>
+                                    <action selector="numberBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lHd-Tq-3mM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="centerNumber" destination="DaK-LP-cps" id="FbU-Wz-VD3"/>
-                        <outlet property="cornerSuit" destination="qLn-9u-diC" id="wst-Z7-7AF"/>
+                        <outlet property="clubs" destination="ql4-a7-VGS" id="5Qm-KY-Msr"/>
+                        <outlet property="cornerSuitBottom" destination="qLn-9u-diC" id="Mg7-su-dGW"/>
+                        <outlet property="cornerSuitTop" destination="3Jd-qY-6ZA" id="RQ3-Hb-b3q"/>
+                        <outlet property="diamonds" destination="JzB-Nc-Ix6" id="Qbw-ND-zsN"/>
+                        <outlet property="hearts" destination="5hp-h0-ZlG" id="1RP-rY-vQL"/>
+                        <outlet property="spades" destination="GEu-Fe-pNe" id="2Lp-nm-qpU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
