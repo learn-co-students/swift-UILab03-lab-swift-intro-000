@@ -10,16 +10,33 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    // TODO: Create IB outlets
+    @IBOutlet weak var topLeftIcon: UILabel!
+    @IBOutlet weak var bottomRightIcon: UILabel!
+    @IBOutlet weak var middleNumber: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    
-    
-    // TODO: IB actions and code to update UI
 
-  
+    @IBAction func click4club(_ sender: Any) {
+        topLeftIcon.text = "♣️"
+        bottomRightIcon.text = "♣️"
+        middleNumber.text = "4"
+    }
+    @IBAction func click3spade(_ sender: Any) {
+        topLeftIcon.text = "♠️"
+        bottomRightIcon.text = "♠️"
+        middleNumber.text = "3"
+    }
+    @IBAction func click8diamond(_ sender: Any) {
+        topLeftIcon.text = "♦️"
+        bottomRightIcon.text = "♦️"
+        middleNumber.text = "8"
+    }
+    @IBAction func click10heart(_ sender: Any) {
+        topLeftIcon.text = "♥️"
+        bottomRightIcon.text = "♥️"
+        middleNumber.text = "10"
+    }
 
 }
