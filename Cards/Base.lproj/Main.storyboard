@@ -76,7 +76,11 @@
                     </view>
                     <connections>
                         <outlet property="bottomLabel" destination="xwc-VA-b0S" id="57J-tH-FKY"/>
+                        <outlet property="firstButton" destination="qrC-Hi-5ik" id="2Pm-hh-iez"/>
+                        <outlet property="fourtButton" destination="GNy-ba-61V" id="BFj-d3-6z7"/>
                         <outlet property="middleLabel" destination="v11-iF-dso" id="YyA-rn-q7v"/>
+                        <outlet property="secondButton" destination="dJS-Rf-uDu" id="ske-DZ-nPc"/>
+                        <outlet property="thirdButton" destination="536-7f-6pl" id="3Tf-lI-kHz"/>
                         <outlet property="topLabel" destination="XOu-1r-Sba" id="COe-4j-iaG"/>
                     </connections>
                 </viewController>

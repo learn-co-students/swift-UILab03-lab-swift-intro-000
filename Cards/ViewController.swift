@@ -16,6 +16,14 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var bottomLabel: UILabel!
     
+    @IBOutlet weak var firstButton: UIButton!
+    
+    @IBOutlet weak var secondButton: UIButton!
+    
+    @IBOutlet weak var thirdButton: UIButton!
+    
+    @IBOutlet weak var fourtButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,29 +39,25 @@ class ViewController: UIViewController {
     
     @IBAction func buttonPressed(_ sender: UIButton) {
         
-        let title = sender.titleLabel!.text!
-        
-        switch title {
-        case "♣️4":
+        switch sender {
+        case firstButton:
             topLabel.text = "♣️"
             middleLabel.text = "4"
             bottomLabel.text = "♣️"
-        case "♠️3":
+        case secondButton:
             topLabel.text = "♠️"
             middleLabel.text = "3"
             bottomLabel.text = "♠️"
-        case "♦️8":
+        case thirdButton:
             topLabel.text = "♦️"
             middleLabel.text = "8"
             bottomLabel.text = "♦️"
-        case "♥️10":
+        case fourtButton:
             topLabel.text = "♥️"
             middleLabel.text = "10"
             bottomLabel.text = "♥️"
         default:
-            topLabel.text = "?"
-            middleLabel.text = "?"
-            bottomLabel.text = "?"
+            break
         }
         
           }
