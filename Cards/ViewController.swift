@@ -21,5 +21,38 @@ class ViewController: UIViewController {
     // TODO: IB actions and code to update UI
 
   
-
+    @IBOutlet weak var leftCorner: UILabel!
+    @IBOutlet weak var center: UILabel!
+    @IBOutlet weak var rightCorner: UILabel!
+    
+    
+    @IBAction func firstButton(_ sender: Any) {
+        leftCorner.text = "♣️"
+        rightCorner.text = "♣️"
+        center.text = "4"
+    }
+    
+    @IBAction func secondButton(_ sender: Any) {
+        
+        leftCorner.text = "♠️"
+        rightCorner.text = "♠️"
+        center.text = "3"
+    }
+    @IBAction func thirdButton(_ sender: Any) {
+        
+        leftCorner.text = "♦️"
+        rightCorner.text = "♦️"
+        center.text = "8"
+    }
+    @IBAction func fourthButton(_ sender: Any) {
+        leftCorner.text = "♥️"
+        rightCorner.text = "♥️"
+        center.text = "10"
+    }
+    
+    
+    
 }
+
+
+
