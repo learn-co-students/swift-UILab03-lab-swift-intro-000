@@ -10,16 +10,42 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    // TODO: Create IB outlets
+    @IBOutlet weak var suitLabelLeft: UILabel!
+    @IBOutlet weak var suitLabelRight: UILabel!
+    @IBOutlet weak var valueLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    
-    
-    // TODO: IB actions and code to update UI
 
-  
+    @IBAction func changeSuit(_ sender: UIButton) {
+        
+        let buttonValue = sender.currentTitle!
+
+        switch buttonValue {
+        case "♣️4":
+            suitLabelLeft.text = "♣️"
+            suitLabelRight.text = "♣️"
+            valueLabel.text = "4"
+        case "♠️3":
+            suitLabelLeft.text = "♠️"
+            suitLabelRight.text = "♠️"
+            valueLabel.text = "3"
+        case "♦️8":
+            suitLabelLeft.text = "♦️"
+            suitLabelRight.text = "♦️"
+            valueLabel.text = "8"
+        case "♥️10":
+            suitLabelLeft.text = "♥️"
+            suitLabelRight.text = "♥️"
+            valueLabel.text = "10"
+        default:
+            suitLabelLeft.text = "?"
+            suitLabelRight.text = "?"
+            valueLabel.text = "?"
+        }
+        
+    }
 
 }
