@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E9E09631EFB69C700B313C4 /* clubs.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E9E095F1EFB69C700B313C4 /* clubs.png */; };
+		5E9E09641EFB69C700B313C4 /* diamonds.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E9E09601EFB69C700B313C4 /* diamonds.png */; };
+		5E9E09651EFB69C700B313C4 /* hearts.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E9E09611EFB69C700B313C4 /* hearts.png */; };
+		5E9E09661EFB69C700B313C4 /* spades.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E9E09621EFB69C700B313C4 /* spades.png */; };
 		7D139A5A1D8E05ED00F92686 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D139A591D8E05ED00F92686 /* ViewController.swift */; };
 		B7262DAB1D176C34009620C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7262DAA1D176C34009620C4 /* AppDelegate.swift */; };
 		B7262DB01D176C34009620C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7262DAE1D176C34009620C4 /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E9E095F1EFB69C700B313C4 /* clubs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clubs.png; sourceTree = "<group>"; };
+		5E9E09601EFB69C700B313C4 /* diamonds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diamonds.png; sourceTree = "<group>"; };
+		5E9E09611EFB69C700B313C4 /* hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearts.png; sourceTree = "<group>"; };
+		5E9E09621EFB69C700B313C4 /* spades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spades.png; sourceTree = "<group>"; };
 		7D139A591D8E05ED00F92686 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B7262DA71D176C34009620C4 /* Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7262DAA1D176C34009620C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +62,10 @@
 		B7262DA91D176C34009620C4 /* Cards */ = {
 			isa = PBXGroup;
 			children = (
+				5E9E095F1EFB69C700B313C4 /* clubs.png */,
+				5E9E09601EFB69C700B313C4 /* diamonds.png */,
+				5E9E09611EFB69C700B313C4 /* hearts.png */,
+				5E9E09621EFB69C700B313C4 /* spades.png */,
 				7D139A591D8E05ED00F92686 /* ViewController.swift */,
 				B7262DAA1D176C34009620C4 /* AppDelegate.swift */,
 				B7262DAE1D176C34009620C4 /* Main.storyboard */,
@@ -91,7 +103,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Flatiron School";
 				TargetAttributes = {
 					B7262DA61D176C34009620C4 = {
@@ -124,7 +136,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E9E09641EFB69C700B313C4 /* diamonds.png in Resources */,
+				5E9E09661EFB69C700B313C4 /* spades.png in Resources */,
 				B7262DB51D176C34009620C4 /* LaunchScreen.storyboard in Resources */,
+				5E9E09651EFB69C700B313C4 /* hearts.png in Resources */,
+				5E9E09631EFB69C700B313C4 /* clubs.png in Resources */,
 				B7262DB21D176C34009620C4 /* Assets.xcassets in Resources */,
 				B7262DB01D176C34009620C4 /* Main.storyboard in Resources */,
 			);
@@ -178,8 +194,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -223,8 +241,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -243,6 +263,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
