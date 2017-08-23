@@ -41,7 +41,7 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3C0-zd-22m">
                                 <rect key="frame" x="37" y="431" width="300" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="♣️4 ♠️3 ♦️8 ♥️10"/>
                                 <connections>
                                     <action selector="startCardsGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fwC-Us-FZm"/>
