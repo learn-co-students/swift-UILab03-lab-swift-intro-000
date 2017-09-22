@@ -12,6 +12,38 @@ class ViewController: UIViewController {
 
     // TODO: Create IB outlets
     
+    @IBOutlet weak var topLabel: UILabel!
+    @IBOutlet weak var centerLabel: UILabel!
+    @IBOutlet weak var bottomLabel: UILabel!
+    
+    @IBAction func clubButton(_ sender: UIButton) {
+        topLabel.text = "♣️"
+        bottomLabel.text = "♣️"
+        centerLabel.text = "4"
+    }
+    
+    @IBAction func spadeButton(_ sender: UIButton) {
+        topLabel.text = "♠️"
+        bottomLabel.text = "♠️"
+        centerLabel.text = "3"
+    }
+    
+    @IBAction func diamondButton(_ sender: UIButton) {
+        topLabel.text = "♦️"
+        bottomLabel.text = "♦️"
+        centerLabel.text = "8"
+    }
+    
+    @IBAction func heartButton(_ sender: Any) {
+        topLabel.text = "❤️"
+        bottomLabel.text = "❤️"
+        centerLabel.text = "10"
+    }
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
