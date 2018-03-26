@@ -8,18 +8,33 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController
+{
 
     // TODO: Create IB outlets
+    
+    @IBOutlet weak var btnOne: UIButton?
+    @IBOutlet weak var btnTwo: UIButton?
+    @IBOutlet weak var btnThree: UIButton?
+    @IBOutlet weak var btnFour: UIButton?
+    
+    @IBOutlet weak var cornerOne: UILabel?
+    @IBOutlet weak var cornerTwo: UILabel?
+    @IBOutlet weak var middleOne: UILabel?
+    
+    var cardSuits = ["♣️", "♠️", "♦️", "♥️"]
+    var cardValues: [String] = ["4", "3", "8", "10"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    
-    
-    // TODO: IB actions and code to update UI
+    @IBAction func showCard(sender: UIButton)
+    {
+        let selectedIndex = sender.tag
 
-  
-
+        cornerOne?.text = cardValues[selectedIndex]
+        cornerTwo?.text = cardValues[selectedIndex]
+        middleOne?.text = cardSuits[selectedIndex]
+    }
 }
