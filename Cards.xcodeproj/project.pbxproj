@@ -96,7 +96,7 @@
 				TargetAttributes = {
 					B7262DA61D176C34009620C4 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = JL54VFJL37;
+						DevelopmentTeam = 2U9UGGDQRU;
 						LastSwiftMigration = 0800;
 					};
 				};
@@ -251,9 +251,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2U9UGGDQRU;
 				INFOPLIST_FILE = Cards/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.flatironschool.Cards;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flatironschool.Cards1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -263,9 +264,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2U9UGGDQRU;
 				INFOPLIST_FILE = Cards/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.flatironschool.Cards;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flatironschool.Cards1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
