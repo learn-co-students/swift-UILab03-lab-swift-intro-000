@@ -10,16 +10,34 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var suitLabelOne: UILabel!
+    @IBOutlet weak var suitLabelTwo: UILabel!
+    @IBOutlet weak var numberLabel: UILabel!
     // TODO: Create IB outlets
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    
-    
-    // TODO: IB actions and code to update UI
+    @IBAction func clubsButtonPressed(_ sender: UIButton) {
+        suitLabelOne.text = "♣️"
+        suitLabelTwo.text = "♣️"
+        numberLabel.text = "4"
+    }
+    @IBAction func spadesButtonPressed(_ sender: UIButton) {
+        suitLabelOne.text = "♠️"
+        suitLabelTwo.text = "♠️"
+        numberLabel.text = "3"
+    }
+    @IBAction func diamondsButtonPressed(_ sender: UIButton) {
+        suitLabelOne.text = "♦️"
+        suitLabelTwo.text = "♦️"
+        numberLabel.text = "8"
+    }
+    @IBAction func heartsButtonPressed(_ sender: UIButton) {
+        suitLabelOne.text = "♥️"
+        suitLabelTwo.text = "♥️"
+        numberLabel.text = "10"
+    }
 
-  
 
 }
