@@ -10,16 +10,39 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    // TODO: Create IB outlets
+    @IBOutlet weak var suitType1: UILabel!
+    @IBOutlet weak var suitType2: UILabel!
+    @IBOutlet weak var cardNumb: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     
+    @IBAction func fourClubs(_ sender: Any) {
+        suitType1.text = "♣️"
+        suitType2.text = "♣️"
+        cardNumb.text = "4"
+    }
     
-    // TODO: IB actions and code to update UI
+    @IBAction func fiveSpades(_ sender: Any) {
+        suitType1.text = "♠️"
+        suitType2.text = "♠️"
+        cardNumb.text = "5"
+    }
+    
 
-  
-
+    @IBAction func threeDiamonds(_ sender: Any) {
+        suitType1.text = "♦️"
+        suitType2.text = "♦️"
+        cardNumb.text = "3"
+    }
+    
+    @IBAction func tenHearts(_ sender: Any) {
+        suitType1.text = "❤️"
+        suitType2.text = "❤️"
+        cardNumb.text = "10"
+    }
+    
 }
