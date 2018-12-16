@@ -10,16 +10,38 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    // TODO: Create IB outlets
+    @IBOutlet weak var cardSuit: UILabel!
+    @IBOutlet weak var cardNumber: UILabel!
+    @IBOutlet weak var b1: UIButton!
+    @IBOutlet weak var b2: UIButton!
+    @IBOutlet weak var b3: UIButton!
+    @IBOutlet weak var b4: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
     
+    @IBAction func button1(_ sender: AnyObject) {
+        cardSuit.text = "♣️"
+        cardNumber.text = "4"
+    }
     
-    // TODO: IB actions and code to update UI
-
+    @IBAction func button2(_ sender: AnyObject) {
+        cardSuit.text = "♠️"
+        cardNumber.text = "3"
+    }
+    
+    @IBAction func button3(_ sender: AnyObject) {
+        cardSuit.text = "♦️"
+        cardNumber.text = "8"
+    }
   
-
+    @IBAction func button4(_ sender: AnyObject) {
+        cardSuit.text = "♥️"
+        cardNumber.text = "10"
+    }
 }
